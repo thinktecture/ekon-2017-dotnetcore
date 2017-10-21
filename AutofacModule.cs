@@ -7,6 +7,7 @@ namespace ekon_2017_dotnetcore
 		protected override void Load(ContainerBuilder builder)
 		{
 			// Todo: Add stuff to container
+			builder.RegisterType<PersonService>();
 		}
 	}
 }
