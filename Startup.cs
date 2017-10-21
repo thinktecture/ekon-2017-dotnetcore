@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Autofac;
 
 namespace ekon_2017_dotnetcore
 {
@@ -24,6 +25,11 @@ namespace ekon_2017_dotnetcore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+        }
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            builder.RegisterModule(new AutofacModule());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
