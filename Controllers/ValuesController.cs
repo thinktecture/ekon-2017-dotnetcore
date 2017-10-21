@@ -10,7 +10,6 @@ namespace ekon_2017_dotnetcore.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-
         public ValuesController(ILogger<ValuesController> logger)
         {
             logger?.LogInformation("{controller} created", nameof(ValuesController));
