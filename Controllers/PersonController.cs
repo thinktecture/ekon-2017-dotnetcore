@@ -6,6 +6,9 @@ using Microsoft.Extensions.Logging;
 [Route("api/[controller]")]
 public class PersonController: Controller
 {
+	// Postman Collection to test this controller:
+	// https://documenter.getpostman.com/view/485169/ekon-2017-net-core/71FVqCv
+
 	private readonly ILogger<PersonController> _logger;
 	private readonly PersonService _svc;
 
